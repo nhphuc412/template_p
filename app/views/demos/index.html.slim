@@ -1,0 +1,11 @@
+p style="color: green" = notice
+
+h1 Demos
+
+#demos
+  - @demos.each do |demo|
+    == render demo
+    p
+      = link_to "Show this demo", demo
+
+= link_to "New demo", new_demo_path
